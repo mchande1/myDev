@@ -1,0 +1,1 @@
+{"animals": ["horse", "Lion", "tiger", "Elephant"]}

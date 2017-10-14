@@ -1,0 +1,7 @@
+<apex:page >
+    <apex:outputText >Hello Bhalaria</apex:outputText>
+  	<image src="https://mohan407318-dev-ed--c.ap2.content.force.com/servlet/servlet.FileDownload?file=00P2800000Qjbcn" 
+           style="width: 300px; height: 200px;" ></image> <br/>
+    <image src="https://mohan407318-dev-ed--c.ap2.content.force.com/servlet/servlet.FileDownload?file=00P2800000QjbiF" 
+           style="width: 300px; height: 200px;" ></image>
+</apex:page>

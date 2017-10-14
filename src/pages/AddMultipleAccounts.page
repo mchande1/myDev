@@ -1,0 +1,15 @@
+<apex:page controller="AddMultipleAccountsController">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockTable value="{!listAccount}" var="acc" id="pbt">
+                <apex:column >
+                    <apex:inputField value="{!acc.Name}"  />
+                </apex:column>
+                <apex:column >
+                    <apex:inputField value="{!acc.Type}"  />
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:commandButton value="Add Account" action="{!addAccount}" reRender="pbt"     />
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

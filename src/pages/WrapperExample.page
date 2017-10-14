@@ -1,0 +1,13 @@
+<!-- Page implementing the wrapper class as example -->
+<apex:page controller="wrapperAccountController" >
+    <apex:pageBlock title="Wrapper class sample ">
+    	<apex:pageBlockSection >
+            <apex:pageBlockTable title="List of Accounts" value="{!initialAcctsList}" var="a">
+                <apex:column value="{!a.name}" />
+                <apex:column value="{!a.Industry}" />
+            </apex:pageBlockTable>
+            <apex:pageBlockTable title="Selected Accounts" value="{!selectedAcctsList}" var="a" >
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

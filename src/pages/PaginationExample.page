@@ -1,0 +1,17 @@
+<!-- PaginationExample
+	 Using the Previous and Next actions -->
+<apex:page standardController="Account" recordSetVar="Accounts" >
+    <apex:pageBlock title="Viewing Accounts">
+        <apex:form id="theForm">
+            <apex:pageBlockSection title="List of Accounts">
+            	<apex:dataList value="{!Accounts}" var="a" type="A">{!a.name}</apex:dataList>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Sample PageBlockSection">
+            </apex:pageBlockSection>
+            <apex:panelGrid columns="2">
+                <apex:commandLink action="{!previous}" value="Previous" />
+                <apex:commandLink action="{!next}" value="Next" />
+            </apex:panelGrid>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>

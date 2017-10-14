@@ -1,0 +1,17 @@
+{
+    "projectName": "MyDevOrg",
+    "username": "rapola.mohan@gmail123.com",
+    "id": "72d7de00-b088-11e7-8b8b-0b0be08bb5df",
+    "namespace": "",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://mohan407318-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\user\\Desktop\\Projects\\MyDev",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

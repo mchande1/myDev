@@ -1,0 +1,9 @@
+<apex:page showHeader="true" tabstyle="Case">
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Test block"  >
+        	This is a test block to check if i can include a section above the list views.
+        </apex:pageBlockSection>
+        <apex:ListViews type="Case" />
+        <apex:ListViews type="Opportunity" />
+    </apex:pageBlock>    
+</apex:page>

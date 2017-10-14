@@ -1,0 +1,14 @@
+<apex:page controller="repeatCon" id="thePage">
+	<apex:variable value="{!0}" var="rowNum"/>
+    <apex:repeat value="{!strings}" var="string" id="theRepeat">
+
+        <table width="380" cellspacing="0" cellpadding="0" border="1px"   style="font-size:20px!important;font-family:Lucida Console, Monospace; font-weight:bold;">
+            <tr>
+                <td>{!rowNum + 1}</td>
+            	<td>{!string}</td>
+            </tr>
+        </table>
+
+    </apex:repeat>
+
+</apex:page>

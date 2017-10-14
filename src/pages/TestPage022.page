@@ -1,0 +1,6 @@
+<apex:page >
+	<apex:OutputText > Hello world </apex:OutputText>
+	<apex:OutputText > Created a test Page </apex:OutputText>
+	<apex:PageBlock title="Main page block">
+	</apex:PageBlock>
+</apex:page>

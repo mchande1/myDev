@@ -1,0 +1,58 @@
+<apex:page sidebar="false" showHeader="false">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .breadcrumb {
+            display: inline-block;
+            box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            outline: none;
+            display: block;
+            float: left;
+            font-size: 16px;
+            line-height: 40px;
+            _color: white;
+            padding: 0 20px;
+            _background: #666;
+            _background: linear-gradient(#666,#444);
+            border: 1px solid black;
+        }
+
+        .breadcrumb a:after {
+            content: '';
+            position: absolute;
+            /*same dimension as the line-height of .breadcrumb a */
+            width: 36px; 
+            height: 36px;
+            border: 1px solid black;
+            /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+            length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+            if diagonal required = 1; length = 1/1.414 = 0.707*/
+            transform: scale(0.707) rotate(45deg);
+        }
+        /*we dont need an arrow after the last link*/
+        .breadcrumb a:last-child:after {
+            content: none;
+        }
+
+    </style>
+    <div class="breadcrumb">
+        <a href="#" class="active">Browse</a>
+        <a href="#">Compare</a>
+        <a href="#">Order Confirmation</a>
+        <a href="#">Checkout</a>
+    </div>
+    <div>
+        <a href="#">Hello Mohan</a>
+    </div>
+</apex:page>

@@ -1,0 +1,14 @@
+<!-- Sample page created 
+     Last update: 25/01/2017-->
+
+<apex:page docType="html-5.0" controller="Sample">
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                Date: <apex:input type="date" value="{!dat}"/>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

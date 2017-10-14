@@ -1,0 +1,9 @@
+<apex:page controller="PageActionController" action="{!actionMethod}" >
+    <apex:pageBlock title="Accounts fields displayed using the outputField component" tabStyle="Account" rendered="{!showPageBlock}">
+    	<apex:pageBlockSection title="{!acct.Name} Information" columns="1">
+            <apex:outputField value="{!acct.Name}" />
+            <apex:outputField value="{!acct.Industry}" />
+            <apex:outputField value="{!acct.Description}" /> 
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

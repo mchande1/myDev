@@ -1,0 +1,8 @@
+<apex:page >
+    <apex:form >
+    	<h1>
+            This is a test page created to test attchments.
+        </h1>
+
+    </apex:form>
+</apex:page>
